@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+fieldset{
+  display: inline-block;
+}
+legend{
+  font-size: 28px;
+}
+label{
+  font-size: 20px;
+}
+.button {
+    border: 1px solid #fff;
+    padding: 6px;
+    outline: none;
+    width: 260px;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 2px;
+    font-family: 'Exo',sans-serif;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius:0%;
+}
+.button :hover{
+  opacity:0.8;
+  cursor: pointer;
+  background: #ffc107;
+  color: black;
+  font-size: 16px;
+  transition: 1s;
+
+}
+.button :active{
+   opacity:0.6;
+}
+
+
+
+    </style>
+  </head>
+    <body style="background-color:#ffffff;">
+      <div style="text-align:center;">
+  	<div class="head">
+  		<h1> Input Form</h1>
+  	</div>
+  	<div id="form_container">
+      <form id="mySampleForm" method="POST" action="mailto:kwong27@buffalo.edu">
+        <fieldset>
+     <br><label for="firstName">First Name:</label><br>
+     <input  required id="firstName" name="firstName" type="text" placeholder="Enter your first name"/><br class="clear">
+     <br><label for="lastName">Last Name:</label><br>
+     <input required id="lastName" name="lastName" type="text" placeholder="Enter your last name"/><br class="clear">
+     <br><label for="Address">Address:</label><br>
+     <input required id="Address" name="Address" type="text" placeholder="Enter your address"/><br class="clear">
+     <br><label for="City">City:</label><br>
+     <input required id="City" name="City" type="text" placeholder="Enter your city"/><br class="clear">
+     <br><label for="State">State:</label><br>
+     <Select id="State" name="State">
+       <option value="AL">Alabama (AL)</option>
+   	<option value="AK">Alaska (AK)</option>
+   	<option value="AZ">Arizona (AZ)</option>
+   	<option value="AR">Arkansas (AR)</option>
+   	<option value="CA">California (CA)</option>
+   	<option value="CO">Colorado (CO)</option>
+   	<option value="CT">Connecticut (CT)</option>
+   	<option value="DE">Delaware (DE)</option>
+   	<option value="DC">District Of Columbia (DC)</option>
+   	<option value="FL">Florida (FL)</option>
+   	<option value="GA">Georgia (GA)</option>
+   	<option value="HI">Hawaii (HI)</option>
+   	<option value="ID">Idaho (ID)</option>
+   	<option value="IL">Illinois (IL)</option>
+   	<option value="IN">Indiana (IN)</option>
+   	<option value="IA">Iowa (IA)</option>
+   	<option value="KS">Kansas (KS)</option>
+   	<option value="KY">Kentucky (KY)</option>
+   	<option value="LA">Louisiana (LA)</option>
+   	<option value="ME">Maine (ME)</option>
+   	<option value="MD">Maryland (MD)</option>
+   	<option value="MA">Massachusetts (MA)</option>
+   	<option value="MI">Michigan (MI)</option>
+   	<option value="MN">Minnesota (MN)</option>
+   	<option value="MS">Mississippi (MS)</option>
+   	<option value="MO">Missouri (MO)</option>
+   	<option value="MT">Montana (MT)</option>
+   	<option value="NE">Nebraska (NE)</option>
+   	<option value="NV">Nevada (NV)</option>
+   	<option value="NH">New Hampshire (NH)</option>
+   	<option value="NJ">New Jersey (NJ)</option>
+   	<option value="NM">New Mexico (NM)</option>
+   	<option value="NY">New York (NY)</option>
+   	<option value="NC">North Carolina (NC)</option>
+   	<option value="ND">North Dakota (ND)</option>
+   	<option value="OH">Ohio (OH)</option>
+   	<option value="OK">Oklahoma (OK)</option>
+   	<option value="OR">Oregon (OR)</option>
+   	<option value="PA">Pennsylvania (PA)</option>
+   	<option value="RI">Rhode Island (RI)</option>
+   	<option value="SC">South Carolina (SC)</option>
+   	<option value="SD">South Dakota (SD)</option>
+   	<option value="TN">Tennessee (TN)</option>
+   	<option value="TX">Texas (TX)</option>
+   	<option value="UT">Utah (UT)</option>
+   	<option value="VT">Vermont (VT)</option>
+   	<option value="VA">Virginia (VA)</option>
+   	<option value="WA">Washington (WA)</option>
+   	<option value="WV">West Virginia (WV)</option>
+   	<option value="WI">Wisconsin (WI)</option>
+   	<option value="WY">Wyoming (WY)</option>
+     </select><br class="clear">
+
+     <br><label  for="zipcode">Zip/Postal Code:</label><br>  <input id="zipcode" required  pattern="[0-9]{5}" name="zipcode" type="text" placeholder="Enter your Zip/Postal Code"/><br class="clear">
+     <br><label for="phone">Phone:</label> <br> <input   id="phone"  required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  name="phone" type="tel" placeholder="Enter your phone number"/><br class="clear">
+    <br><label for="email">Email Address:</label><br>  <input id="email" required name="email" type="email" placeholder="Enter your Email Address"/><br class="clear">
+</fieldset>
+     <br><label for="submit"></label>
+     <button id="submit" class ="button" name="submit" type="submit" value="Do it!">OK Send My Data</button><br class="clear">
+   </form>
+    <div id="foot">
+        <a href="index.html">Home Page</a>
+    </div>
+	</div>
+</div>
+  </body>
+</html>

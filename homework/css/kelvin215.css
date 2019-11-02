@@ -1,0 +1,52 @@
+body{
+  background: #ffffff;
+}
+
+
+h1{
+  color: gold;
+  font-size: 20px;
+}
+
+h2{
+  color: purple;
+  font-size: 20px;
+}
+
+h3{
+  color:grey ;
+  font-size: 20px;
+}
+
+h4{
+  color: yellow;
+  font-size: 20px;
+}
+
+h5{
+  color: blue;
+  font-size: 20px;
+}
+
+h6{
+  color:red ;
+  font-size: 20px;
+}
+
+p{
+  color: black;
+  font-size: 50px;
+}
+
+b{
+  font-weight: bold;
+}
+
+a{
+  font-size: 30px;
+}
+
+table, th, td {
+  font-size: 20px;
+    border: 1px solid black;
+}

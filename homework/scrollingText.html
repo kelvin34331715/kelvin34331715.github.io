@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />            
+        <meta name="keywords" content="keywords" />        
+        <meta name="Description" content="Description" />
+        <title>scrolling page</title>
+        <!--CSS/JS-->
+        <style>
+            *{margin:0;padding:0;}
+            ul,li{list-style:none;display:block;}
+            #scrollBox{height:150px;width:300px;margin:100px auto;background:#f09;overflow:hidden;}
+            #scrollBox #con1,#con2{width:280px;float:left;}
+            #scrollBox li{height:15px;line-height:15px;text-align:center;}
+            
+        </style>
+        
+        
+    </head>
+ <body onload="scrollUp()">
+        <!--div-->
+    <div id="scrollBox">
+        <ul id="con1">
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+            <li>This homework was so hard<li>
+        </ul>
+        <ul id="con2"></ul>
+    </div>
+    <script>            
+                var area =document.getElementById('scrollBox');
+                var con1 = document.getElementById('con1');
+                var con2 = document.getElementById('con2');
+                var can;
+                gcan = document.getElementById("cvs");
+                con2.innerHTML=con1.innerHTML;
+                function scrollUp(){
+                if(area.scrollTop>=con1.offsetHeight){
+                    area.scrollTop=0;
+                }else{
+                    area.scrollTop++
+                }
+                }                
+                var time = 50;
+                var mytimer=setInterval(scrollUp,time);
+                area.onmouseover=function(){
+                    clearInterval(mytimer);
+                }
+                area.onmouseout=function(){
+                    mytimer=setInterval(scrollUp,time);
+                }
+        </script>
+
+        <div >
+			<canvas id="cvs">
+			</canvas>
+			<canvas id="des">
+			
+			</canvas>
+		</div>
+		<a  href="multimedia.html">Previous Page</a>
+ </body>
+
+</html>
